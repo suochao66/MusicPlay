@@ -60,6 +60,9 @@ public class MusicPlayer implements OnCompletionListener, OnErrorListener{
 		mRandom.setSeed(System.currentTimeMillis());
 	}
 	
+	/**
+	 * ÍË³ö
+	 */
 	public void exit()
 	{
 		mMediaPlayer.reset();
@@ -68,6 +71,10 @@ public class MusicPlayer implements OnCompletionListener, OnErrorListener{
 		mPlayState = MusicPlayState.MPS_NOFILE;
 	}
 	
+	/**
+	 * Ë¢ÐÂ
+	 * @param FileList
+	 */
 	public void refreshMusicList(List<MusicData> FileList)
 	{
 
